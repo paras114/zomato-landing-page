@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.75rem;
+}
+.row {
+  max-width: 115rem;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 3.4rem;
+  color: #252525;
+  font-weight: 400;
+}
+h2 {
+  font-size: 2.1rem;
+  color: #252525;
+  font-weight: 400;
+}
+h4{
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 400;
+}
+p {
+  font-size: 1.7rem;
+  color: #5b5b5b;
+}
+section{
+    width: 100%;
+    /* height: 100vh; */
+}
+/* * End of general styles  */
+
+.hero__section{
+    width: 100%;
+    min-height: 100vh;
+}
+.hero__section header {
+  background: url("./images/heroSectionBackground.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: calc(60vh - 1.5rem);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+.nav__list a:hover {
+  text-decoration: underline;
+}
+.nav__left {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* hero section text */
+.hero__section-text {
+  min-height: calc(60vh - 60px - 1.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+.hero__logo {
+  width: 30rem;
+}
+.hero__section-text h1 {
+  color: #fff;
+}
+
+.hero__section-inputs {
+  display: flex;
+  background-color: #252525;
+  width: 60%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 15px;
+  background-color: #fff;
+}
+.input input {
+  padding: 0px 2px;
+  border: none;
+  outline: none;
+  font-size: 1.7rem;
+  color: rgb(119, 119, 119);
+  width: 100%;
+}
+input::placeholder {
+  color: rgb(119, 119, 119);
+  font-size: 1.7rem;
+}
+.input:nth-child(1) input {
+  border-right: 2px solid rgb(188, 188, 188);
+}
+.input:nth-child(1) {
+  /* padding: 10px; */
+  width: 35%;
+}
+.input:nth-child(2) {
+  width: 65%;
+  /* background-color: antiquewhite; */
+}
+.input i {
+  font-size: 2rem;
+}
+.input:nth-child(1) i {
+  color: rgb(255, 126, 139);
+}
+.input:nth-child(2) i {
+  color: rgb(188, 188, 188);
+}
+
+/* hero section cards */
+.hero__section-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 4rem 0;
+}
+.hero__section-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(209, 209, 209, 0.621);
+  transition: all .3s ease;
+  box-shadow: 0 0.2rem 1rem rgba(0, 00, 0, 0.08);
+}
+.hero__section-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0.4rem 1rem rgba(0, 00, 0, 0.15) ;
+}
+.hero__section-card .img {
+  width: 100%;
+  height: 16rem;
+  overflow: hidden;
+}
+.hero__section-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-text {
+  padding: 15px 15px;
+}
+.card-text h2 {
+  line-height: 1.7;
+}
+
+
+/* end of section 1 */
+
+/* section 2 */
+.section__2{
+    padding: 6rem 0 ;
+}
+.section__description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section__description-link{
+    color: rgb(255, 126, 139);
+}
+.section__description-link:hover{
+    color: rgb(251, 103, 118);
+}
+.section__2-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.section__2-card{
+    padding: 15px;
+    color: #fff;
+    height: 35rem;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.section__2-card p{
+    color: #fff;
+    font-size: 1.6rem;
+}
+.card-1{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.923), rgba(0, 0, 0, 0.254),rgba(0, 0, 0, 0.153)) , url("https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-04/Tottenham%20Stadium.jpg?itok=TLTD0HBM");
+    background-size: cover;
+}
+.card-2{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.923), rgba(0, 0, 0, 0.254),rgba(0, 0, 0, 0.153)) , url("./images/collection3.jpg");
+    background-size: cover;
+}
+.card-3{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.923), rgba(0, 0, 0, 0.254),rgba(0, 0, 0, 0.153)) , url("./images/collection4.jpg");
+    background-size: cover;
+}
+.card-4{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.923), rgba(0, 0, 0, 0.254),rgba(0, 0, 0, 0.153)) , url("./images/collection2.jpg");
+    background-size: cover;
+}
+/* end of section 2 */
+
+
+/* section 3 */
+.section__3{
+    padding: 6rem 0;
+}
+.section__3-cards{
+margin-top: 3rem;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(3,1fr);
+gap: 2rem;
+}
+.section__3-card{
+    box-shadow:  00 0.4rem 1rem rgba(0, 0, 0, 0.103);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    transition: box-shadow .3s ease;
+    height: 10rem;
+}
+.section__3-card-last{
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.section__3-card:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.203);
+}
+.section__3-card-arrow{
+    color: #252525;
+    font-size: 2rem;
+}
+/* end of section 3 */
+
+
